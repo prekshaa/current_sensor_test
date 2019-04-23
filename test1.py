@@ -27,7 +27,7 @@ try:
           print("Warning: current exceeds limit!")
 
 except KeyboardInterrupt:
-print(EXIT_FAILURE2)
+     print("EXIT_FAILURE2")
      
 time.sleep(1)
 
