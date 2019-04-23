@@ -9,6 +9,7 @@ ina219 = adafruit_ina219.INA219(i2c_bus)
      
 print("ina219 test")
 
+try:
 if (i2c.try_lock()):
      print("EXIT_FAILURE1");
 
