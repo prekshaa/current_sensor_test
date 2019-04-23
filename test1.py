@@ -9,7 +9,7 @@ ina219 = adafruit_ina219.INA219(i2c_bus)
      
 print("ina219 test")
 
-if (i2c.try_lock())
+if (i2c.try_lock()):
      print("EXIT_FAILURE1");
 
 while not i2c.try_lock():
@@ -22,7 +22,7 @@ while True:
      print("Current:       {} mA".format(ina219.current))
      print("")
 
-if(ina219.current >= 430)
+if(ina219.current >= 430):
      print("Warning: current exceeds limit!")
 
 except KeyboardInterrupt:
