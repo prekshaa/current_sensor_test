@@ -1,7 +1,7 @@
 ## test1.py
 
 import time
-from ina219 import busio
+import busio
 import adafruit_ina219
 from ina219 import INA219
 i2c = busio.I2C(board.SCL, board.SDA)
